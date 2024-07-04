@@ -1,0 +1,299 @@
+
+* {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    
+}
+
+body { 
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+.container { 
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  justify-content: space-between;
+  height: 80px;
+  margin-top: 16px;
+  position: fixed;
+  width: 100%;
+  background-color: black;
+}
+.navbarBrand {
+  margin-top: 20px;
+}
+.navBar{
+  display: flex;
+  -webkit-box-align: end;
+  align-items: center;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  justify-content: flex-end;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(0,0,0,.4);
+  margin-right: 16px;
+  
+
+}
+
+.navLogo {
+  width: 140px;
+  height: 50px;
+  margin: 16px;
+  background-color: transparent;
+}
+
+.topNav {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(180deg, black, transparent);
+  z-index: 10;
+  select{
+    background: rgba(0,0,0,.4);
+    border: 1px solid #aaa;
+    color: #fff;
+    font-size: .875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 20px;
+    height: 36px;
+  }
+}
+
+
+
+.homeBanner {
+  height: 800px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  flex-direction: row;
+  background-color: black;
+
+  }
+  
+.videoIntro {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+  }
+  
+.infoIntro {
+    position: absolute;
+    top: 35%;
+    left: 50px;
+    width: 700px;
+    z-index: 3;
+  }
+  
+.headingIntro {
+    font-size: 60px;
+    transition: all 0.3s ease 0s;
+    color: white;
+    display: block;
+    font-weight: 800;
+    margin-top: 200px;
+  }
+
+.colorText {
+  color: red
+}
+.overViewIntro {
+  color: white;
+}
+
+.list {
+    gap: 6px;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    margin-left: 0px;
+    background-color: black;
+    width: 100%;
+}
+
+.row {
+  flex-direction: row;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.listMovies {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  row-gap: 10px;
+  overflow: auto;
+  margin-left: 30px;
+  
+}
+
+
+.text-genres {
+  color: white;
+  z-index: 4;
+  margin-left: 15px;
+  font-size: 25px;
+  border-left: 2px solid red;
+  padding-left: 5px;
+  
+}
+.movie {
+  width: 360px;
+  height: 500px;
+  margin: 16px;
+ position: relative;
+ display: flex;
+ 
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.moviesName {
+  color: #fff;
+  position: absolute;
+  padding: 4px;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.35);
+  text-align: center;
+  width: 100%;
+}
+
+.btnLeft {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  background-color: white;
+}
+.btnRight {
+  /* position: absolute; */
+  
+  width: 40px;
+  height: 40px;
+  background-color: white;
+}
+
+.footer {
+  background-image: url(https://user-images.githubusercontent.com/33485020/108069438-5ee79d80-7089-11eb-8264-08fdda7e0d11.jpg);
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.footer-content-logo {
+  width: 450px;
+  height: 80px;
+}
+
+
+.footer-content-menus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+}
+
+.footer-menu {
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: start;
+  font-size: 35px;
+  color: #fff;
+  font-weight: 300;
+}
+.textMenu:active {
+  color: blue;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+
+
+.footer-signature {
+  font-size: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: 200;
+}
+
+.textMenu {
+  text-decoration: none;
+  color: #fff;
+}
+
+.detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.original {
+  color: red;
+  font-size: 30px;
+}
+.date {
+  color: white;
+
+}
+.vote {
+  color: white;
+
+}
+.overView {
+  color: white;
+
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
