@@ -17,15 +17,27 @@ const Header = () => {
                     </a>
 
                     <SearchMovies/>
+
                     
                     <div className="navBar">
-                        <from className="dFlex" role="search">
+                        
+                        <div className='genresList'>
+                            <a className="genres" href="/">Now-playing</a>
+                            <a className="genres" href="/">Popular</a>
+                            <a className="genres" href="/">Top-rate</a>
+                            <a className="genres" href="/">Upcoming</a>
+                        </div>
+
+                        <Button variant="contained">Sign in</Button>
+
+                        
+                        {/* <from className="dFlex" role="search">
                             <select>
                                 <option> English </option>
                                 <option> VietNam </option>
                             </select>
                             <Button variant="contained">Sign in</Button>
-                        </from>
+                        </from> */}
                     </div>
                 </div>
             </nav>

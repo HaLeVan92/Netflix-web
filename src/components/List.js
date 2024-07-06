@@ -5,7 +5,7 @@ import { API_KEY } from '../app/config';
 
 
 
-function List({dataMovie}) {
+function List({dataMovie, title}) {
     const [movies, setMovies] = useState();
     
     const navigate = useNavigate();
@@ -17,20 +17,20 @@ function List({dataMovie}) {
             setMovies(data.data.results);
         }
         fetchData();
-        
+    // eslint-disable-next-line    
     }, [])
 
     console.log(movies);
 
   return (
     <div className='list'>
-        <h2 className='text-genres'>Netflix</h2>
+        <h2 className='text-genres'>{title}</h2>
         <div className='row'>
             <div className='listMovies'>
                 {movies?.map((movie) => (
                     
                     <div className='movie' onClick={() => navigate(`/detail/${movie.id}`)}>
-                        <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt='Movie 1' width='360' height='500'/>                       
+                        <img src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} alt='Movie 1' width='360' height='500'/>                       
                         <h3 className='moviesName'>{`${movie.title}`}</h3>
                     </div>
                     
